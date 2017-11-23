@@ -14,14 +14,17 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var posts: [[String: Any]] = []
+    var valueToPass:String!
     var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
-        self.tableView.rowHeight = 200
+        self.tableView.rowHeight = 210
         
+      
+     
         fetchPhotoData()
         
         refreshControl = UIRefreshControl()
@@ -30,6 +33,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
         refreshControl.attributedTitle = NSAttributedString(string: "Fetching Images")
         tableView.insertSubview(refreshControl, at: 0)
         
+        self.valueToPass = "Hey"
         
     }
     
@@ -74,15 +78,50 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
         
         let post = posts[indexPath.row]
         
+        
         let photos = post["photos"] as? [[String: Any]]
         let photo = photos![0]
         let originalSize = photo["original_size"] as! [String:Any]
         let urlString = originalSize["url"] as! String
         let url = URL(string: urlString)
         
+        let caption = post["summary"] as! String
+        
+        cell.captionLabel.text = caption
         cell.photoImageView.af_setImage(withURL: url!)
+        cell.selectionStyle = .none
       
         return cell
+        
+    }
+    
+    //MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if (segue.identifier == "detailSegue") {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let dvc = segue.destination as! DetailViewController
+                
+                
+                let post = posts[indexPath.row]
+                let photos = post["photos"] as? [[String: Any]]
+                let photo = photos![0]
+                let originalSize = photo["original_size"] as! [String:Any]
+                let urlString = originalSize["url"] as! String
+               
+                
+                
+                dvc.passedUrlValue = urlString
+               
+            }
+          
+           
+        }
+        
+        else{
+            
+            print("Nope")
+        }
         
     }
 

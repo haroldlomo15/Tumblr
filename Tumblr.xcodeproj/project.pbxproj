@@ -18,6 +18,7 @@
 		F24DA48C1FC3BAC400369150 /* TumblrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DA48B1FC3BAC400369150 /* TumblrUITests.swift */; };
 		F2D767F81FC3BCE9007595C5 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D767F71FC3BCE9007595C5 /* PhotoCell.swift */; };
 		F2D767FC1FC3C3DE007595C5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D767FB1FC3C3DE007595C5 /* PhotosViewController.swift */; };
+		F2D768001FC4CC17007595C5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D767FF1FC4CC17007595C5 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		F24DA48D1FC3BAC400369150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2D767F71FC3BCE9007595C5 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		F2D767FB1FC3C3DE007595C5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		F2D767FF1FC4CC17007595C5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F889EA531641B6A99E393910 /* Pods_Tumblr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumblr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 				F24DA4771FC3BAC300369150 /* Info.plist */,
 				F2D767F71FC3BCE9007595C5 /* PhotoCell.swift */,
 				F2D767FB1FC3C3DE007595C5 /* PhotosViewController.swift */,
+				F2D767FF1FC4CC17007595C5 /* DetailViewController.swift */,
 			);
 			path = Tumblr;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				F2D767FC1FC3C3DE007595C5 /* PhotosViewController.swift in Sources */,
 				F2D767F81FC3BCE9007595C5 /* PhotoCell.swift in Sources */,
 				F24DA46C1FC3BAC300369150 /* AppDelegate.swift in Sources */,
+				F2D768001FC4CC17007595C5 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
