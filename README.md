@@ -11,7 +11,7 @@ Used Alamofire to popluate the table view with the images I got from Tumblr's ap
 Here's a walkthrough of the implemented:
 
 
-<img src="https://firebasestorage.googleapis.com/v0/b/datasto-61f2f.appspot.com/o/TumblrGif.gif?alt=media&token=73d63f73-daa0-4593-96b8-dce68d49787f" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="https://firebasestorage.googleapis.com/v0/b/datasto-61f2f.appspot.com/o/TumblrGif2.gif?alt=media&token=cf2ecbdb-5e76-452c-a122-a39742aecbe6" title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## License
